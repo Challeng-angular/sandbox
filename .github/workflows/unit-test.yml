@@ -1,4 +1,4 @@
-name: Lint Commit Messages
+name: Unit test
 
 on: [pull_request]
 
