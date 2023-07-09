@@ -20,9 +20,10 @@ import { CardDetailsComponent } from './components/card-details/card-details.com
 import { NewslettersComponent } from './components/newsletters/newsletters.component';
 import { FormComponent } from './components/form/form.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
-import { DetailProductComponent } from './components/pages/detail-product/detail-product.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
-import { ListProductsComponent } from './components/pages/list-products/list-products.component';
+import { DetailProductComponent } from './product/detail-product/detail-product.component';
+import { ListProductsComponent } from './product/list-products/list-products.component';
+import { ProductsService } from './product/products.service';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ListProductsComponent } from './components/pages/list-products/list-pro
     NavbarComponent,
     DetailProductComponent,
     AboutUsComponent,
+    DetailProductComponent,
     ListProductsComponent
   ],
   imports: [
@@ -52,7 +54,7 @@ import { ListProductsComponent } from './components/pages/list-products/list-pro
     MatCardModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers:[ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
