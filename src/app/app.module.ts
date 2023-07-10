@@ -22,8 +22,8 @@ import { FormComponent } from './components/form/form.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ListProductsComponent } from './components/pages/list-products/list-products.component';
-import { ProductsService } from './services/products.service';
 import { CardComponent } from './components/card/card.component';
+import { ProductsService } from './product/products.service';
 
 @NgModule({
   declarations: [
