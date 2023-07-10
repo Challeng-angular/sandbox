@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,8 +21,8 @@ import { FormComponent } from './components/form/form.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ListProductsComponent } from './components/pages/list-products/list-products.component';
-import { ProductsService } from './services/products.service';
 import { CardComponent } from './components/card/card.component';
+import { ProductsService } from './product/products.service';
 
 @NgModule({
   declarations: [
@@ -38,10 +37,9 @@ import { CardComponent } from './components/card/card.component';
     NewslettersComponent,
     FormComponent,
     NavbarComponent,
-    DetailProductComponent,
     AboutUsComponent,
     ListProductsComponent,
-    CardComponent
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,9 +50,9 @@ import { CardComponent } from './components/card/card.component';
     MatSelectModule,
     MatRadioModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  providers:[ProductsService],
-  bootstrap: [AppComponent]
+  providers: [ProductsService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
