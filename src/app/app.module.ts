@@ -21,9 +21,9 @@ import { NewslettersComponent } from './components/newsletters/newsletters.compo
 import { FormComponent } from './components/form/form.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
-import { DetailProductComponent } from './product/detail-product/detail-product.component';
-import { ListProductsComponent } from './product/list-products/list-products.component';
-import { ProductsService } from './product/products.service';
+import { ListProductsComponent } from './components/pages/list-products/list-products.component';
+import { ProductsService } from './services/products.service';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +40,8 @@ import { ProductsService } from './product/products.service';
     NavbarComponent,
     DetailProductComponent,
     AboutUsComponent,
-    DetailProductComponent,
-    ListProductsComponent
+    ListProductsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
