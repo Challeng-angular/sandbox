@@ -1,0 +1,16 @@
+name: Test in docker
+
+on: [pull_request]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag container_test
+      run: docker exec -t container_test ng test --browsers=ChromeHeadless --watch=false --code-coverage
+      run: echo "Youpi"
