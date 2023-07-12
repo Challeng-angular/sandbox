@@ -11,5 +11,8 @@
     "scripts"
   ],
   "author": "Rémi PONCHE",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2"
+  }
 }
