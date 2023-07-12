@@ -1,0 +1,15 @@
+{
+  "name": "pharmacie-tool",
+  "version": "1.0.0",
+  "description": "outils pour le projet challenge pharmacie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tool",
+    "scripts"
+  ],
+  "author": "Rémi PONCHE",
+  "license": "ISC"
+}
