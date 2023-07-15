@@ -18,6 +18,9 @@ import { ListProductsComponent } from './components/pages/list-products/list-pro
 import { ProductsService } from './services/products.service';
 import { AppRoutingModule } from './app-routing.module';
 import { CardComponent } from './components/card/card.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenu } from '@angular/material/menu';
+import { MaterialModule } from './material-module';
 
 
 @NgModule({
@@ -42,6 +45,8 @@ import { CardComponent } from './components/card/card.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatCardModule,
+    MaterialModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent],
