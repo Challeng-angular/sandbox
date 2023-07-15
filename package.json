@@ -8,15 +8,19 @@
     "build:prod": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage"
+    "test:prod": "ng test --browsers=ChromeHeadless --watch=false --code-coverage",
+    "test:docker": "docker exec -it pharmacie_app ng test",
+    "prepare": "npx husky install"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.1.0",
+    "@angular/cdk": "~16.1.4",
     "@angular/common": "^16.1.0",
     "@angular/compiler": "^16.1.0",
     "@angular/core": "^16.1.0",
     "@angular/forms": "^16.1.0",
+    "@angular/material": "~16.1.4",
     "@angular/platform-browser": "^16.1.0",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
