@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="mat-elevation-z8 navbar">
+  <div class="brand" (click)="redirectToHomepage()">
+    <img src="./assets/images/logo.svg" alt="logo pharmacie Durant" />
+    <span>PHARMACIE DUPONT</span>
+  </div>
+  <div class="ms-auto navbar-nav">
+    <button
+      *ngFor="let menuItem of menuItems; last as isLast"
+      [routerLink]="menuItem.link"
+      mat-button
+      class="nav-link"
+      routerLinkActive="active"
+    >
+      {{ menuItem.text }}
+      <div *ngIf="isLast">
+        <img src="./assets/images/cart-icon-navbar.svg" alt="icone panier" />
+      </div>
+    </button>
+  </div>
+  <div class="ms-auto burger-btn-wrapper" *ngIf="isSmallScreen">
+    <button mat-button [matMenuTriggerFor]="menuRef" class="burger-btn">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menuRef="matMenu" class="navbar-nav-mobile">
+      <button
+        *ngFor="let menuItem of menuItems; last as isLast"
+        [routerLink]="menuItem.link"
+        mat-menu-item
+        class="nav-link"
+      >
+        <mat-icon> {{ menuItem.icon }}</mat-icon
+        >{{ isLast ? "Panier" : menuItem.text }}
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>
