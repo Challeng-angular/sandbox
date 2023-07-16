@@ -38,7 +38,8 @@ import { MaterialModule } from './material-module';
     DetailProductComponent,
     AboutUsComponent,
     ListProductsComponent,
-    CardComponent,
+    CardComponent, 
+    DetailProductComponent,
   ],
 
   imports: [
